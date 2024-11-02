@@ -168,7 +168,22 @@ return {
       --        For example, to see the options for `lua_ls`, you could go to: https://luals.github.io/wiki/settings/
       local servers = {
         -- clangd = {},
-        -- gopls = {},
+        gopls = {
+          -- -- gofumpt = true,
+          -- cmd = { 'gopls' },
+          -- filetypes = { 'go', 'gomod' },
+          -- root_dir = require('lspconfig/util').root_pattern('go.work', 'go.mod', '.git'),
+          -- settings = {
+          --   gopls = {
+          --     analyses = {
+          --       unusedparams = true,
+          --       shadow = true,
+          --     },
+          --     staticcheck = true,
+          --     usePlaceholders = true,
+          --   },
+          -- },
+        },
         -- pyright = {},
         -- rust_analyzer = {},
         -- ... etc. See `:help lspconfig-all` for a list of all the pre-configured LSPs
