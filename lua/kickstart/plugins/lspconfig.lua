@@ -169,19 +169,22 @@ return {
       local servers = {
         -- clangd = {},
         gopls = {
-          -- -- gofumpt = true,
+          -- gofmt = true,
           -- cmd = { 'gopls' },
           -- filetypes = { 'go', 'gomod' },
           -- root_dir = require('lspconfig/util').root_pattern('go.work', 'go.mod', '.git'),
           -- settings = {
           --   gopls = {
+          --     gofumpt = true, -- This was missing and could be more useful than gofmt for formatting
+          --     staticcheck = true, -- Enable additional checks
           --     analyses = {
           --       unusedparams = true,
-          --       shadow = true,
           --     },
-          --     staticcheck = true,
-          --     usePlaceholders = true,
           --   },
+          -- },
+          -- init_options = {
+          --   usePlaceholders = true,
+          --   completeUnimported = true,
           -- },
         },
         -- pyright = {},
